@@ -36,8 +36,6 @@ table.dataTable thead th {
   border: 1px solid #233760!important;
 }
 
-
-
 .no-footer {
   border-bottom: 0px solid #ddd!important
 }
@@ -52,7 +50,8 @@ button.dt-button, div.dt-button, a.dt-button, input.dt-button {
   border: 0px!important;
   color: white!important;
   background:#3DB54D!important;
-	background-color: #3db54a!important;
+/*	background-color: #3db54a!important;*/
+	background-color: #3db54a;
   border-color: #3db54a!important;
 /*  transform: skewX(-22deg);*/
 }
@@ -178,15 +177,29 @@ body {
   border-left-color: #3db54a;
 }
 
+
 section.sidebar .shiny-bound-input.action-button {
   margin: 6px 15px 6px 15px;
 }
-
+/*
 .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #37a242!important;
     background-image: none;
     border-color: #37a242;
+}
+*/
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #23662a!important;
+    background-image: none;
+    border-color: #23662a;
+}
+
+.btn.active, .btn:active {
+    color: #fff;
+    background-color: #23662a!important;
 }
 
 .input-daterange {
@@ -337,3 +350,10 @@ thead {
 .modal-footer {
     border-top: 0 none;
 }
+
+
+button.btn.radiobtn.btn-default.active {
+    background-color: #23662a!important;
+}
+
+
