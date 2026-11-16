@@ -39,15 +39,17 @@ gl_viewer_ui <- function(id) {
             # "MDO"
           ),
           selected = "CEH",
-          multiple = T
+          multiple = T,
+          options =
+            list(`actions-box` = TRUE)
         ) |>
           column(width = 2),
         pickerInput(
           inputId = ns("posting_period_filter"),
           label = "Posting Period",
           choices = 0:12,
-          multiple = T,
           selected = c(),
+          multiple = T,
           options =
             list(`actions-box` = TRUE)
         ) |>
