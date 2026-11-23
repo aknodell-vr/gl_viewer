@@ -28,7 +28,7 @@ gl_viewer_ui <- function(id) {
             "Victory Renewables" = "VR",
             # "AENG",
             "Carbon Capture" = "BCC",
-            # "CEPC",
+            "CEPS",
             "Carbon Garden" = "CG",
             # "CIP",
             "CWC",
