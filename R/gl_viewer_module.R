@@ -254,7 +254,7 @@ get_inventory_dt <- function(companies, prior_year, posting_period) {
       document_type = character(0),
       module = character(0),
       item_number = character(0),
-      transaction_quantity = double(0),
+      quantity = double(0),
       unit_cost = double(0),
       extended_cost = double(0),
       transaction_location = character(0)
@@ -410,7 +410,7 @@ gl_viewer_server <- function(id, global_session) {
           document_type = character(0),
           module = character(0),
           item_number = character(0),
-          transaction_quantity = double(0),
+          quantity = double(0),
           unit_cost = double(0),
           extended_cost = double(0),
           transaction_location = character(0)
@@ -584,6 +584,11 @@ gl_viewer_server <- function(id, global_session) {
                         )
                     )
                 )
+            ) |>
+            formatCurrency(
+              columns = c("quantity"),
+              currency = c(""),
+              digits = c(5)
             ) |>
             formatCurrency(
               columns = c("unit_cost", "extended_cost"),
